@@ -1,0 +1,62 @@
+<?php 
+	session_start();
+	$_SESSION['player'] = 1;
+	require_once "co_db.php";
+?>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Jeux Morpion</title>
+	<link id="icone" rel="icon" href="" type="image/ico" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+
+</head>
+
+<body>
+	
+
+
+			<div id="game">
+				<div class="gameboy">
+				<img src="./images/gameboy.png">
+				</div>
+				
+				<div class="grille">
+
+					<div class="row">
+						<div class="square bottom right" id="sq1" value="1"></div>
+						<div class="square bottom right" id="sq2" value="2"></div>
+						<div class="square bottom" id="sq3" value="3"></div>
+					</div>
+					<div class="row">
+						<div class="square bottom right" id="sq4" value="4"></div>
+						<div class="square bottom right" id="sq5" value="5"></div>
+						<div class="square bottom" id="sq6" value="6"></div>
+					</div>
+					<div class="row">
+						<div class="square right" id="sq7" value="7"></div>
+						<div class="square right" id="sq8" value="8"></div>
+						<div class="square" id="sq9" value="9"></div>
+					</div>
+				</div>
+						
+				
+				<div id="statusjeu">
+				<h2>Resultat:</h2>
+					<div id="message1"></div>	
+					<div id="resultat"></div>
+					<button id="initialiser"> Nouvelle partie</button>					
+				</div>
+				
+			</div>
+		
+
+	<script type="text/javascript" src="jquery-1-8-2.js"></script> <!-- Appel de la bibliothèque jQuery -->	
+    <script type="text/javascript" src="jsmorpion.js"> </script>
+
+
+</body>
+</html>

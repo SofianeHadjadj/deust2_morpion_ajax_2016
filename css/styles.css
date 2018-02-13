@@ -1,0 +1,62 @@
+
+body {
+	font-family: 'Arial';
+	font-size: 13px;
+	color: #323D27;
+}
+
+
+#game{
+	width:700px;
+	height:900px;
+	padding-left:40%;
+	padding-top: 155px;
+
+}
+.grille{
+	width:55%;
+	float:left;
+	margin-left:6%;
+	margin-top:12%;
+	position:relative;
+}
+
+.gameboy{
+	position:absolute;
+}
+
+.row{
+	clear:both;
+	margin-left:50px;
+}
+
+.square{
+	width:57px;
+	height:40px;	
+	float:left;
+	font-weight:bold;
+	font-size:60px;
+	text-align:center;
+	padding-top:12px;
+	padding-bottom: 0px;
+	color: #323D27;
+
+}
+
+.bottom{
+	border-bottom:3px solid #323D27;
+}
+.right{
+	border-right:3px solid #323D27;
+}
+
+#statusjeu{
+	color:#000;	
+	width:45%;
+	float:left;
+	border: 3px solid #AA2169;
+	padding: 15px;
+	height:auto;
+	position:relative;
+	margin-left:60%;
+}
